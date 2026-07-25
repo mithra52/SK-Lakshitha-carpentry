@@ -269,7 +269,7 @@ border-radius: 50%;
 .about-hero{
     position:relative;
     height:100vh;
-    background:url(../../dad.png) center/cover no-repeat;
+    background:url(./dad.png) center/cover no-repeat;
     display:flex;
     justify-content:center;
     align-items:center;

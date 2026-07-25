@@ -297,7 +297,7 @@ img{
         rgba(0,0,0,0.55),
         rgba(0,0,0,0.55)
     ),
-    url("../../service.jpeg");
+    url("./service.jpeg");
 
 
     background-size:cover;

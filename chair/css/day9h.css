@@ -1,0 +1,99 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#ddd4d4;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.board{
+    width:620px;
+    height:620px;
+    background:#4b2b19;
+    padding:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+}
+
+/* Left Numbers */
+.left{
+    height:480px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    color:gold;
+    font-size:22px;
+    font-weight:bold;
+}
+
+/* Right Numbers */
+.right{
+    height:480px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    color:gold;
+    font-size:22px;
+    font-weight:bold;
+}
+
+/* Center Area */
+.center{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+/* Top Letters */
+.top{
+    display:flex;
+    justify-content:space-between;
+    color:gold;
+    font-size:22px;
+    font-weight:bold;
+    padding:0 10px;
+}
+
+/* Bottom Letters */
+.bottom{
+    display:flex;
+    justify-content:space-between;
+    color:gold;
+    font-size:22px;
+    font-weight:bold;
+    padding:0 10px;
+}
+
+/* Chess Squares */
+.grid{
+    width:480px;
+    height:480px;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.box{
+    width:60px;
+    height:60px;
+}
+
+.white{
+    background:#cfc6b6;
+}
+
+.black{
+    background:#1c1712;
+}
+
+        

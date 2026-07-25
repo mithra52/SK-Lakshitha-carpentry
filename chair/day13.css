@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+.parent{
+     
+height: 200px;
+    width: 200px;
+    border: 2px solid blue;
+    margin: 90px auto;
+    perspective: 890px;
+
+
+}
+.child{
+    height: 200px;
+    width: 200px;
+    background-image: url(../tovino.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*transform: translatey(-200px);*/
+    transform: translateZ(-150px);
+
+/*transform: rotate(360deg);*/
+}
+.child:hover{
+
+transition: 2s ;
+/*transform: translateZ(-100px);
+transform: rotate(360deg);*/
+transform:translatez(-150px)  rotate(360deg);
+    
+
+}

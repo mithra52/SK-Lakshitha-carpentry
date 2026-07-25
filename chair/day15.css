@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    animation-name: head;
+    
+    animation-iteration-count: infinite;
+    animation-duration: 9s;
+    opacity: 0.8;
+}
+
+img{
+   animation-name: head;
+    
+    animation-iteration-count: infinite;
+    animation-duration: 9s;
+    opacity: 0.8; 
+    height: 250px;
+    width: 150px;
+    
+}
+    @keyframes head{
+        0%{
+        
+            color:whitesmoke;
+        }
+        28%{
+           color: brown;
+        }
+        30%{
+            color:blue;
+        }
+        50%{
+            color:black;
+        }
+        60%{
+            color:blanchedalmond
+        }
+        75%{
+            color: aquamarine;
+        }
+        87%{
+            color: blueviolet;
+        }
+        90%{
+            color: gold;
+        }
+        100%{
+            color: pink;
+        }
+    }

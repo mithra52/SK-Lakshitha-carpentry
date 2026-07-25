@@ -1,0 +1,33 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.tot{
+    width: 100%;
+    color: aliceblue;
+    display: flex;
+}
+.para1{
+   background-color: blueviolet; 
+padding: 10px;
+float: 4;
+order: 3;
+}
+
+
+.para2{
+   background-color: rgb(225, 63, 13); 
+   padding: 10px; 
+   float: 7;
+   order: 1;
+}
+
+   
+
+.para3{
+   background-color: rgb(10, 222, 66); 
+  padding: 10px; 
+  float: 1;
+  order: 2;
+}

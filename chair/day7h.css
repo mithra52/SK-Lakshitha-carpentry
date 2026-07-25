@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.box{
+    background-color: yellowgreen;
+    color:red;
+    height:400px;
+    width:40%;
+    overflow: scroll;
+    padding: 40px;
+    
+}

@@ -1,0 +1,53 @@
+.box{
+height:400px;
+width:500px;
+padding-top: 30px;
+position: relative;
+}
+.con{
+    width: 500px;
+    height: 15px;
+    background-color: aqua;
+    border-top-left-radius: 50px;
+}
+.boot{
+height:85px;
+width:140px;
+background-color: greenyellow;
+color: black;
+position: absolute;
+left: 100px;
+top:190px;
+border-radius: 10px ;
+}
+.cs{
+height:85px;
+width:140px;
+background-color:blue;
+color: black;
+position: absolute;
+left: 180px;
+top:160px;
+border-radius: 10px ;
+
+}
+
+.ht{
+height:85px;
+width:140px;
+background-color:rgb(203, 17, 89);
+color: black;
+position: absolute;
+left:260px;
+top:130px;
+border-radius: 10px ;
+}
+
+.bor{
+width: 500px;
+    height: 15px;
+    background-color: aqua;
+    border-bottom-right-radius:30px ;
+    position: absolute;
+    top:485px;
+}

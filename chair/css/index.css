@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#111;
+    overflow:hidden;
+}
+
+.loader{
+    position:relative;
+    text-align:center;
+}
+
+
+
+
+/* Logo */
+.logo{
+    width:200px;
+    position:relative;
+    z-index:2;
+    animation:zoom 2s ease;
+}
+
+/* Company Name */
+h1{
+    margin-top:20px;
+    color:#d4af37;
+    font-size:40px;
+    font-family:Georgia, serif;
+    position:relative;
+    overflow:hidden;
+}
+
+/* Shine Effect */
+h1::after{
+   content:"";
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:50%;
+    height:100%;
+    background:rgba(255,255,255,.5);
+    transform:skewX(-25deg);
+    animation:shine 3s infinite;
+}
+
+a{
+    text-decoration: none;
+}
+/* Animations */
+
+
+
+@keyframes zoom{
+    0%{
+        transform:scale(.3);
+        opacity:0;
+    }
+
+    100%{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+
+@keyframes shine{
+    0%{
+        left:-100%;
+    }
+
+    100%{
+        left:150%;
+    }
+}

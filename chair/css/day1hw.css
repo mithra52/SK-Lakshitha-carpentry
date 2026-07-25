@@ -1,0 +1,19 @@
+.box1{
+padding: 10px;
+height: 150px;
+width:90%;
+border:3px solid black;
+margin-bottom:18px ;
+text-align: left;
+}
+
+
+
+.pic{
+
+    float:right;
+    height:140px;
+    width:150px;
+    
+}
+

@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.con{
+    background-color: blueviolet;
+    height: 500px;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x:auto ;
+    scrollbar-width: none;
+
+}
+.box{
+    height:200px;
+    width:400px;
+    background-color: yellowgreen;
+    display: inline-block;
+
+}

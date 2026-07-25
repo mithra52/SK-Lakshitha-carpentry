@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+box-sizing:border-box;
+}
+.nav{
+    height:20px;
+    width: 100%;
+    background-color: black;
+    color: azure;
+}
+.noti{
+    height:170px;
+    width:180px;
+    color: black;
+    background-color: rgb(13, 189, 220);
+    padding: 20px;
+    float:right;
+    border: 2px solid black;
+}
+.no{
+   padding: 50px; 
+}
+.tot{
+    height:1200px;
+    width:500px;
+    color: black;
+    background-color: rgb(227, 227, 7);
+    position: relative;
+    border:3px solid black ;
+}
+.box1{
+height:100px;
+width:450px;
+background-color: rgb(51, 215, 11);
+color:black;
+position: sticky;
+padding: 10px;
+}
+.all{
+    padding:10px 400px;
+}
+.bo{
+    padding: 20px;
+    padding-bottom: 10px;
+
+}
+.box2{
+height:100px;
+width:450px;
+background-color: rgb(252, 12, 244);
+color:black;
+position: sticky;
+padding: 10px;
+}
+.boo{
+   padding: 20px;
+    padding-bottom: 10px;
+ 
+}

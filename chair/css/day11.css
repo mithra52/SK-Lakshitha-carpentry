@@ -1,0 +1,24 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.tot{
+    height:350px;
+    width:100%;
+   /* background-image: linear-gradient(red ,yellow,blue,brown);*/
+    background:linear-gradient(90deg,blue ,orange,white,black) ;
+}
+.circle{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-image: radial-gradient(red,white,brown,pink);
+}
+
+.box{
+    height: 100px;
+    width:60px;
+    border-radius: 22px;
+    box-shadow: 13px 30px 33px gray;
+}

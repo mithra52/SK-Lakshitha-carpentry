@@ -1,0 +1,11 @@
+.box1{
+    height: 500px;
+    width:50vw;
+    border:3px solid blue;
+
+}
+.con{
+   height:300px ;
+   width:50vw;
+   border:3px solid yellow; 
+}

@@ -1,0 +1,351 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#0d0d0d;
+    color:#fff;
+    scrollbar-width: none;
+}
+
+/* ===========================
+   MAIN LAYOUT
+=========================== */
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+
+/* Sidebar */
+
+.sidebar{
+position:fixed;
+left:0;
+top:0;
+width:80px;
+height:100vh;
+background-color:rgba(10,10,10,.55);
+backdrop-filter: blur(15px);
+-webkit-backdrop-filter: blur(15px);
+overflow:hidden;
+transition:.5s ease;
+/*box-shadow:10px 0 30px rgba(0,0,0,.37);*/
+box-shadow:12px 0 40px rgba(0,0,0,.45);
+color:white;
+z-index: 1000;
+}
+
+.sidebar:hover{
+width:240px;
+/*box-shadow:20px 0 50px rgba(0,0,0,.19);*/
+}
+
+/* Logo */
+
+.logo{
+height:80px;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+color:gold;
+border-bottom:1px solid #333;
+}
+
+/* Menu */
+
+.sidebar ul{
+list-style:none;
+margin-top:20px;
+}
+
+.sidebar ul li{
+margin:10px;
+}
+
+.sidebar ul li a{
+display:flex;
+align-items:center;
+text-decoration:none;
+color:white;
+padding:15px;
+border-radius:10px;
+transition:.4s;
+}
+
+.sidebar ul li a{
+
+color:white;
+transform:translateX(10px);
+}
+
+.sidebar ul li a i{
+font-size:22px;
+min-width:40px;
+text-align:center;
+}
+
+.sidebar ul li a span{
+opacity:0;
+margin-left:10px;
+transition:.4s;
+white-space:nowrap;
+}
+
+.sidebar:hover span{
+opacity:1;
+}
+
+/* Content */
+
+.content{
+margin-left:100px;
+padding:40px;
+transition:.5s;
+}
+
+/*.sidebar:hover ~.main{
+margin-left:260px;
+width:calc(100% - 240px);
+}*/
+
+/* Animation */
+
+.sidebar{
+animation:slide 1s;
+}
+
+@keyframes slide{
+
+from{
+left:-100px;
+opacity:0;
+}
+
+to{
+left:0;
+opacity:1;
+}
+
+}
+
+/* ===========================
+   MAIN
+=========================== */
+
+/* MAIN */
+
+.main{
+    margin-left:70px;
+    /*width: calc(100%-90px);*/
+    padding:20px;
+    /*transition: 0.5s;*/
+}
+
+.title{
+    color:white;
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+/* HORIZONTAL SCROLL */
+
+.movie-container{
+    display:grid;
+
+    grid-template-rows:repeat(2,320px);
+
+    grid-auto-flow:column;
+
+    grid-auto-columns:220px;
+
+    /*gap:20px;*/
+
+    overflow-x:auto;
+    overflow-y:visible;
+
+    padding-bottom:20px;
+
+    scroll-behavior:smooth;
+}
+
+.movie-container::-webkit-scrollbar{
+    height:8px;
+}
+
+.movie-container::-webkit-scrollbar-thumb{
+    background:gold;
+    border-radius:10px;
+}
+
+.movie-container::-webkit-scrollbar-track{
+    background:#222;
+}
+
+/* CARD */
+
+.movie-card{
+/*
+    position:relative;*/
+
+    width:220px;
+    height:320px;
+z-index: 1;
+    position: relative;
+
+    /*overflow:hidden;*/
+
+    /*cursor:pointer;*/
+
+    transition:.5s;
+
+    background:white;
+
+}
+
+.movie-card img{
+
+    width:100%;
+    height:300px;
+    display: block;
+    
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+/* OVERLAY */
+
+.overlay{
+    padding: 15px;
+    display: none;
+    background-color: #fff;
+}
+
+/* HOVER */
+
+.movie-card:hover img{
+
+    transform:scale(1.15);
+
+}
+
+.movie-card:hover{
+    transform: scale(1.05);
+
+z-index: 100;
+    /*transform:translateY(-8px);
+
+    box-shadow:0 0 20px gold;*/
+
+}
+
+.movie-card:hover .overlay{
+    display: block;
+
+ /*   opacity:1;
+
+    transform:translateY(0);*/
+
+}
+
+/* TEXT */
+
+.overlay h3{
+
+    color:gold;
+
+    margin-bottom:15px;
+
+    font-size:22px;
+    background-color: #fff;
+}
+
+.overlay p{
+
+    color:#0d0d0d;
+
+    font-size:14px;
+    font-weight: bold;
+    line-height:22px;
+background-color: #fff;
+    margin-bottom:20px;
+
+}
+
+/* BUTTONS */
+
+.btns{
+
+    display:flex;
+
+    gap:10px;
+background-color: #fff;
+}
+
+.btns button{
+
+    padding:10px 18px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:gold;
+
+    color:black;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    font-weight:bold;
+
+}
+
+.btns button:hover{
+
+    background:white;
+
+    transform:scale(1.1);
+background-color: #fff;
+}
+
+.btns i{
+
+    margin-right:6px;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.movie-container{
+
+    grid-auto-columns:180px;
+
+    grid-template-rows:repeat(2,270px);
+
+}
+
+.movie-card{
+
+    width:180px;
+
+    height:270px;
+
+}
+
+}

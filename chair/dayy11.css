@@ -1,0 +1,196 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f3f3f3;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.container{
+
+    width:90%;
+    height:85vh;
+    background:white;
+
+    display:flex;
+
+    border-radius:20px;
+    overflow:hidden;
+
+    box-shadow:0px 10px 25px rgba(0,0,0,.5);
+
+}
+
+/* Sidebar */
+
+.sidebar{
+
+    width:70px;
+    background:#0d0b88;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+}
+
+.logo{
+
+    width:28px;
+    height:28px;
+    background:gray;
+    margin-top:18px;
+    border-radius:5px;
+
+}
+
+.circle{
+
+    width:18px;
+    height:18px;
+    background:gray;
+    border-radius:50%;
+    margin-top:24px;
+    display: block;
+    cursor: pointer;
+    transition: 0.6s;
+
+}
+
+/*.circle:hover{
+    background-color: aliceblue;
+    transform: scale(1.2);
+}*/
+.active{
+    background:white;
+}
+
+/* Right Side */
+
+.right{
+
+    flex:1;
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+/* Header */
+
+header{
+
+    height:70px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 25px;
+
+}
+
+.line{
+
+    width:150px;
+    height:10px;
+    background:#b8c8ea;
+    border-radius:10px;
+
+}
+
+.line:last-child{
+
+    width:100px;
+
+}
+
+/* Main */
+
+main{
+
+    flex:1;
+
+    padding:20px;
+
+    display:grid;
+
+    gap:20px;
+
+    grid-template-columns:1fr 2fr 1fr;
+
+    grid-template-rows:200px 200px;
+
+}
+
+/* Cards */
+
+.card{
+
+    background:#b8c8ea;
+
+    border-radius:20px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+    font-size:20px;
+    font-weight:bold;
+
+}
+
+/* Grid Position */
+
+.buttons{
+
+    grid-column:1/2;
+
+}
+
+.cards{
+
+    grid-column:2/4;
+
+}
+
+.accounts{
+
+    grid-column:1/2;
+
+}
+
+.calendar{
+
+    grid-column:2/3;
+
+}
+
+.integration{
+
+    grid-column:3/4;
+
+}
+
+/* Footer */
+
+footer{
+
+    height:15px;
+
+}
+/*h2{
+    cursor: pointer;
+
+}
+h2:hover{
+    background-color: black;
+}*/

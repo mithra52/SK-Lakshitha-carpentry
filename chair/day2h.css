@@ -1,0 +1,15 @@
+.box{
+height: 550px;
+width: 720px;
+border:2px solid red;
+text-align: center;
+color:yellow;
+
+}
+body{
+background-image: url(../tovin.jpeg);
+background-position: fixed;
+background-size: 100% 100%;
+background-repeat:no-repeat;
+padding:15px;
+}

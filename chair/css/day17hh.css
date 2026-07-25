@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#111;
+}
+
+.box{
+    width:320px;
+    height:300px;
+    border:5px solid #fff;
+    border-radius:25px;
+    position:relative;
+    overflow:hidden;
+}
+
+.ball{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    position:absolute;
+}
+
+.ball1{
+    background:#8a2be2;
+    animation:move1 3s ease-in-out infinite alternate;
+}
+
+.ball2{
+    background:#ff1493;
+    animation:move2 3s ease-in-out infinite alternate;
+}
+
+@keyframes move1{
+    0%{
+        left:20px;
+        top:60px;
+    }
+    25%{
+        left:230px;
+        top:200px;
+    }
+    50%{
+        left:230px;
+        top:100px;
+    }
+    75%{
+        left:20px;
+        top:250px;
+    }
+    100%{
+        left:20px;
+        top:0px;
+    }
+}
+
+@keyframes move2{
+    0%{
+        left:230px;
+        top:100px;
+    }
+    25%{
+        left:20px;
+        top:270px;
+    }
+    50%{
+        left:20px;
+        top:20px;
+    }
+    75%{
+        left:230px;
+        top:100px;
+    }
+    100%{
+        left:230px;
+        top:200px;
+    }
+}

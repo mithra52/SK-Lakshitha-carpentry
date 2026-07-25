@@ -1,0 +1,25 @@
+h1{
+  color:yellowgreen ;  
+  text-align: center;
+}
+p{
+padding:10px;
+color:black;
+
+
+}
+.con{
+background-image: url(../../ris.jpg);
+
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size:100% 100% ;
+}
+
+.jay{
+ font-size: 80px;
+ background-image:URL(../../dru.jpg) ;
+ COLOR:transparent;
+ background-clip: text;
+ background-size: 100% 100%;
+}

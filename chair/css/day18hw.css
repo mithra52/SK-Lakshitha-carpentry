@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+header{
+    background-color: black;
+    color: aliceblue;
+    width: 100%;
+    height: 70px;
+    font-size: 30px;
+}
+.cart{
+margin-left: 20px;
+width: 80px;
+height: 70px;
+}
+nav{
+    display: flex;
+    
+}
+ul{
+    margin:10px 10px 10px 600px;
+    display: flex;
+    justify-content: space-around;
+    gap: 28px;
+}
+.total{
+    width: 100%;
+    background-color: aliceblue;
+    color: black;
+    display: grid;
+    gap:20px;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+}
+
+
+.box{
+     padding: 19px;
+     gap: 26px;
+    height: 400px;
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 9px 9px 20px gray;
+    
+}
+img{
+    height:200px ;
+    width: 190px;
+    border: 1px solid salmon;
+    border-radius: 10px;
+}

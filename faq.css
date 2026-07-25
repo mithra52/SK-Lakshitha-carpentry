@@ -284,7 +284,7 @@ border-radius: 50%;
     background:
     linear-gradient(rgba(0,0,0,0.65),
     rgba(0,0,0,0.65)),
-    url("../../faz.jpg");
+    url("./faz.jpg");
 
     background-position:center;
     background-size:cover;
